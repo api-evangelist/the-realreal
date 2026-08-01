@@ -1,8 +1,29 @@
 aid: the-realreal
-name: The Realreal
-description: The Realreal is a company surfaced as a portfolio company of canaan-partners and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/the-realreal.png
+name: The RealReal
+description: >-
+  The RealReal is the world's largest online marketplace for authenticated,
+  resale luxury goods, operating a managed consignment marketplace across
+  women's and men's fashion, fine jewelry and watches, handbags, fine art, and
+  home. Founded in 2011 and headquartered in San Francisco, the company employs
+  in-house gemologists, horologists, art curators, and brand authenticators to
+  verify every item, pairing that expertise with data-driven pricing and demand
+  insights. The RealReal is a publicly traded company (NASDAQ: REAL) and has
+  processed tens of millions of consigned items. It was surfaced as a portfolio
+  company of Canaan Partners and added to the API Evangelist network; as of this
+  enrichment pass The RealReal publishes no public developer API, SDK, or
+  developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/the-realreal/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +33,30 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Retail
+- E-commerce
+- Marketplace
+- Luxury
+- Resale
+- Consignment
+- Fashion
+- Sustainability
+common:
+- type: DomainSecurity
+  url: security/the-realreal-domain-security.yml
+- type: Website
+  url: https://www.therealreal.com
+- type: InvestorRelations
+  url: https://investor.therealreal.com/
 apis: []
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
