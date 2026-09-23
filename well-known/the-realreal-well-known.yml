@@ -1,13 +1,18 @@
 generated: '2026-07-21'
 method: searched
 host: https://www.therealreal.com
-note: >-
-  No .well-known discovery surface published. The RealReal is a consumer luxury
-  resale marketplace with no public developer API or OAuth authorization server.
-  All probed endpoints returned 404. Recorded for auditability; absence is a
-  valid, expected result and no WellKnown/SecurityTxt pointer is wired.
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
+note: No .well-known discovery surface published. The RealReal is a consumer luxury resale marketplace
+  with no public developer API or OAuth authorization server. All probed endpoints returned 404. Recorded
+  for auditability; absence is a valid, expected result and no WellKnown/SecurityTxt pointer is wired.
+hosts:
+- host: https://www.therealreal.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
